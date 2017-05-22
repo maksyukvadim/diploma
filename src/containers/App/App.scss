@@ -1,22 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: Roboto;
+}
+
 .app {
-  .brand {
-    position: absolute;
-    $size: 40px;
-    top: 5px;
-    left: 5px;
-    display: inline-block;
-    background: #2d2d2d url('../Home/logo.png') no-repeat center center;
-    width: $size;
-    height: $size;
-    background-size: 80%;
-    margin: 0 10px 0 0;
-    border-radius: $size / 2;
+  .nav {
+    display: block;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #4a148c;
+    a {
+      border: none !important;
+      display: flex;
+      height: 100px;
+      font-size: 30px;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
   }
-  nav :global(.fa) {
-    font-size: 2em;
-    line-height: 20px;
-  }
+  
 }
+
 .appContent {
-  margin: 50px 0; // for fixed navbar
+    margin-left: 300px;
 }
+

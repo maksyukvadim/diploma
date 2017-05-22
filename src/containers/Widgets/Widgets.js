@@ -35,6 +35,7 @@ export default class Widgets extends Component {
   };
 
   render() {
+    console.log(this.props);
     const handleEdit = (widget) => {
       const {editStart} = this.props; // eslint-disable-line no-shadow
       return () => editStart(String(widget.id));
